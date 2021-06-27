@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on augenye的博客</title>
+    <link>https://yezijian1677.github.io/public/page/</link>
+    <description>Recent content in Pages on augenye的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yezijian1677.github.io/public/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://yezijian1677.github.io/public/about/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yezijian1677.github.io/public/about/</guid>
+      <description>Hey，I&amp;rsquo;m augenye，目前就职于京东零售-技术与数据中心，一枚全栈（干）工程师，热爱生活，热爱代码～
+技能清单:
+ Java Spring Netty Database Vue/React/Mini-program &amp;hellip;  技能树: 个人经历:
+   时间 经历     2016 - 2020 天津理工大学 本科学业   2020 - Now 京东零售-技术与数据中心   &amp;hellip; future    个人主页:
+ GitHub: yezijian1677 博客: augenye的博客 email: augenye@gmail.com  </description>
+    </item>
+    
+    <item>
+      <title>Archives</title>
+      <link>https://yezijian1677.github.io/public/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yezijian1677.github.io/public/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://yezijian1677.github.io/public/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yezijian1677.github.io/public/search/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
