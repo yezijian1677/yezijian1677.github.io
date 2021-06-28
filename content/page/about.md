@@ -24,7 +24,7 @@ Hey，I'm augenye，目前就职于**京东零售-技术与数据中心**，一�
 * ...
 
 技能树:  
-![技能树](img/skill.png)
+![技能树](https://sleeve-dev.oss-cn-qingdao.aliyuncs.com/sleeve-dev/images/self/skill.png)
 
 个人经历:
 
