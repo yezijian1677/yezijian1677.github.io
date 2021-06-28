@@ -1,16 +1,12 @@
 +++
 author = "augenye"
 title = "Nginx"
-date = "2021-06-28"
-draft = "true"
-description: "Nginx Learn"
+date = "2021-06-27"
+description = "Nginx base knowledge"
 categories = [
-    "server"
+    "技术"
 ]
 tags = [
-    "linux",
-    "Nginx"
+    "nginx"
 ]
 +++
-
-#### Learn
