@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>emoji on augenye的博客</title>
-    <link>https://yezijian1677.github.io/public/tags/emoji/</link>
+    <link>http://sleeve.augenye.cn/tags/emoji/</link>
     <description>Recent content in emoji on augenye的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yezijian1677.github.io/public/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://sleeve.augenye.cn/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emoji Support</title>
-      <link>https://yezijian1677.github.io/public/p/emoji-support/</link>
+      <link>http://sleeve.augenye.cn/p/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yezijian1677.github.io/public/p/emoji-support/</guid>
+      <guid>http://sleeve.augenye.cn/p/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     
