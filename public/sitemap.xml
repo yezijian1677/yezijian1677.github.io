@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://sleeve.augenye.cn/about/</loc>
+    <loc>http://sleeve.augenye.cn/</loc>
     <lastmod>2021-06-27T14:23:11+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sleeve.augenye.cn/</loc>
+    <loc>http://sleeve.augenye.cn/categories/</loc>
+    <lastmod>2021-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://sleeve.augenye.cn/p/nginx/</loc>
+    <lastmod>2021-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://sleeve.augenye.cn/tags/nginx/</loc>
+    <lastmod>2021-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://sleeve.augenye.cn/post/</loc>
+    <lastmod>2021-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://sleeve.augenye.cn/tags/</loc>
+    <lastmod>2021-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://sleeve.augenye.cn/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2021-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://sleeve.augenye.cn/about/</loc>
     <lastmod>2021-06-27T14:23:11+00:00</lastmod>
   </url>
   
@@ -18,17 +48,7 @@
   </url>
   
   <url>
-    <loc>http://sleeve.augenye.cn/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://sleeve.augenye.cn/p/test-chinese/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://sleeve.augenye.cn/post/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -69,11 +89,6 @@
   
   <url>
     <loc>http://sleeve.augenye.cn/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://sleeve.augenye.cn/tags/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   
