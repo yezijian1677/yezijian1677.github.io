@@ -37,5 +37,5 @@ Hey，I'm augenye，目前就职于**京东零售-技术与数据中心**，一�
 个人主页:
 
 - GitHub: [yezijian1677](https://github.com/yezijian1677)
-- 博客: [augenye的博客](https://www.augenye.cn)
+- 博客: [augenye的博客](http://sleeve.augenye.cn)
 - email: augenye@gmail.com
