@@ -6,7 +6,25 @@
     <description>Recent content in Tags on augenye的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 27 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sleeve.augenye.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sleeve.augenye.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>juc</title>
+      <link>http://sleeve.augenye.cn/tags/juc/</link>
+      <pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://sleeve.augenye.cn/tags/juc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>并发</title>
+      <link>http://sleeve.augenye.cn/tags/%E5%B9%B6%E5%8F%91/</link>
+      <pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://sleeve.augenye.cn/tags/%E5%B9%B6%E5%8F%91/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>nginx</title>
       <link>http://sleeve.augenye.cn/tags/nginx/</link>
