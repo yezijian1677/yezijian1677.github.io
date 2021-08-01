@@ -6,7 +6,30 @@
         <description>Recent content on augenye的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Fri, 02 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sleeve.augenye.cn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sleeve.augenye.cn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>DDD - Domain Primitive</title>
+        <link>http://sleeve.augenye.cn/p/ddd-domain-primitive/</link>
+        <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+        
+        <guid>http://sleeve.augenye.cn/p/ddd-domain-primitive/</guid>
+        <description>&lt;h2 id=&#34;domain-primitive&#34;&gt;Domain Primitive&lt;/h2&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu&#34;&gt;https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://juejin.cn/post/6844904177207001101&#34;&gt;https://juejin.cn/post/6844904177207001101&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;应用架构&#34;&gt;应用架构&lt;/h2&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://developer.aliyun.com/article/719251&#34;&gt;https://developer.aliyun.com/article/719251&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://juejin.cn/post/6912228908075057166&#34;&gt;https://juejin.cn/post/6912228908075057166&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;repository&#34;&gt;Repository&lt;/h2&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://developer.aliyun.com/article/758292&#34;&gt;https://developer.aliyun.com/article/758292&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://juejin.cn/post/6845166890554228744&#34;&gt;https://juejin.cn/post/6845166890554228744&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;领域层设计规范&#34;&gt;领域层设计规范&lt;/h2&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://developer.aliyun.com/article/784117?spm=a2c6h.12873639.0.0.23c344e7KWlCOb&#34;&gt;https://developer.aliyun.com/article/784117?spm=a2c6h.12873639.0.0.23c344e7KWlCOb&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://juejin.cn/post/6912228908075057166&#34;&gt;https://juejin.cn/post/6912228908075057166&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;避免流水账&#34;&gt;避免流水账&lt;/h2&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://developer.aliyun.com/article/783664?spm=a2c6h.12873639.0.0.1d0c2cf1JlpmgQ&#34;&gt;https://developer.aliyun.com/article/783664?spm=a2c6h.12873639.0.0.1d0c2cf1JlpmgQ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://juejin.cn/post/6953141151931039758&#34;&gt;https://juejin.cn/post/6953141151931039758&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Java Concurrent</title>
         <link>http://sleeve.augenye.cn/p/java-concurrent/</link>
         <pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate>

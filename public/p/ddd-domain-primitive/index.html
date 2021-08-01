@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Domain Primitive Link: https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu
+Link: https://juejin.cn/post/6844904177207001101
+应用架构 Link: https://developer.aliyun.com/article/719251
+Link: https://juejin.cn/post/6912228908075057166
+Repository Link: https://developer.aliyun.com/article/758292
+Link: https://juejin.cn/post/6845166890554228744
+领域层设计规范 Link: https://developer.aliyun.com/article/784117?spm=a2c6h.12873639.0.0.23c344e7KWlCOb
+Link: https://juejin.cn/post/6912228908075057166
+避免流水账 Link: https://developer.aliyun.com/article/783664?spm=a2c6h.12873639.0.0.1d0c2cf1JlpmgQ
+Link: https://juejin.cn/post/6953141151931039758'><title>DDD - Domain Primitive</title>
+
+<link rel='canonical' href='http://sleeve.augenye.cn/p/ddd-domain-primitive/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='DDD - Domain Primitive'>
+<meta property='og:description' content='Domain Primitive Link: https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu
+Link: https://juejin.cn/post/6844904177207001101
+应用架构 Link: https://developer.aliyun.com/article/719251
+Link: https://juejin.cn/post/6912228908075057166
+Repository Link: https://developer.aliyun.com/article/758292
+Link: https://juejin.cn/post/6845166890554228744
+领域层设计规范 Link: https://developer.aliyun.com/article/784117?spm=a2c6h.12873639.0.0.23c344e7KWlCOb
+Link: https://juejin.cn/post/6912228908075057166
+避免流水账 Link: https://developer.aliyun.com/article/783664?spm=a2c6h.12873639.0.0.1d0c2cf1JlpmgQ
+Link: https://juejin.cn/post/6953141151931039758'>
+<meta property='og:url' content='http://sleeve.augenye.cn/p/ddd-domain-primitive/'>
+<meta property='og:site_name' content='augenye的博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='微服务' /><meta property='article:tag' content='DDD' /><meta property='article:published_time' content='2021-08-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-01T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="DDD - Domain Primitive">
+<meta name="twitter:description" content="Domain Primitive Link: https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu
+Link: https://juejin.cn/post/6844904177207001101
+应用架构 Link: https://developer.aliyun.com/article/719251
+Link: https://juejin.cn/post/6912228908075057166
+Repository Link: https://developer.aliyun.com/article/758292
+Link: https://juejin.cn/post/6845166890554228744
+领域层设计规范 Link: https://developer.aliyun.com/article/784117?spm=a2c6h.12873639.0.0.23c344e7KWlCOb
+Link: https://juejin.cn/post/6912228908075057166
+避免流水账 Link: https://developer.aliyun.com/article/783664?spm=a2c6h.12873639.0.0.1d0c2cf1JlpmgQ
+Link: https://juejin.cn/post/6953141151931039758">
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="http://sleeve.augenye.cn" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%9C%8D%E5%8A%A1%E7%AB%AF/" >
+                服务端
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/ddd-domain-primitive/">DDD - Domain Primitive</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Aug 01, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="domain-primitive">Domain Primitive</h2>
+<p>Link: <a href="https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu">https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu</a></p>
+<p>Link: <a href="https://juejin.cn/post/6844904177207001101">https://juejin.cn/post/6844904177207001101</a></p>
+<h2 id="应用架构">应用架构</h2>
+<p>Link: <a href="https://developer.aliyun.com/article/719251">https://developer.aliyun.com/article/719251</a></p>
+<p>Link: <a href="https://juejin.cn/post/6912228908075057166">https://juejin.cn/post/6912228908075057166</a></p>
+<h2 id="repository">Repository</h2>
+<p>Link: <a href="https://developer.aliyun.com/article/758292">https://developer.aliyun.com/article/758292</a></p>
+<p>Link: <a href="https://juejin.cn/post/6845166890554228744">https://juejin.cn/post/6845166890554228744</a></p>
+<h2 id="领域层设计规范">领域层设计规范</h2>
+<p>Link: <a href="https://developer.aliyun.com/article/784117?spm=a2c6h.12873639.0.0.23c344e7KWlCOb">https://developer.aliyun.com/article/784117?spm=a2c6h.12873639.0.0.23c344e7KWlCOb</a></p>
+<p>Link: <a href="https://juejin.cn/post/6912228908075057166">https://juejin.cn/post/6912228908075057166</a></p>
+<h2 id="避免流水账">避免流水账</h2>
+<p>Link: <a href="https://developer.aliyun.com/article/783664?spm=a2c6h.12873639.0.0.1d0c2cf1JlpmgQ">https://developer.aliyun.com/article/783664?spm=a2c6h.12873639.0.0.1d0c2cf1JlpmgQ</a></p>
+<p>Link: <a href="https://juejin.cn/post/6953141151931039758">https://juejin.cn/post/6953141151931039758</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>
+        
+            <a href="/tags/ddd/">DDD</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+     
+     
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="yezijian1677/blog_hugo_talk"
+        issue-term="title"
+        
+        label="blog"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2019 - 
+        
+        2021 augenye的博客
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.4.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#domain-primitive">Domain Primitive</a></li>
+    <li><a href="#应用架构">应用架构</a></li>
+    <li><a href="#repository">Repository</a></li>
+    <li><a href="#领域层设计规范">领域层设计规范</a></li>
+    <li><a href="#避免流水账">避免流水账</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
