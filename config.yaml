@@ -1,8 +1,8 @@
-baseurl: http://sleeve.augenye.cn
+baseurl: https://www.augenye.cn
 languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 5
-title: augenye的博客
+title: augenye
 
 # Robots
 enableRobotsTXT: true
