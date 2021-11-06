@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on augenye的博客</title>
-    <link>http://sleeve.augenye.cn/page/</link>
-    <description>Recent content in Pages on augenye的博客</description>
+    <title>Pages on augenye</title>
+    <link>https://www.augenye.cn/page/</link>
+    <description>Recent content in Pages on augenye</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sleeve.augenye.cn/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.augenye.cn/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://sleeve.augenye.cn/about/</link>
+      <link>https://www.augenye.cn/about/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://sleeve.augenye.cn/about/</guid>
+      <guid>https://www.augenye.cn/about/</guid>
       <description>Hey，I&amp;rsquo;m augenye，目前就职于京东零售-技术与数据中心，一枚全栈（干）工程师，热爱生活，热爱代码～
 技能清单:
  Java Spring Netty Database Vue/React/Mini-program &amp;hellip;  技能树:
@@ -23,19 +23,19 @@
     
     <item>
       <title>Archives</title>
-      <link>http://sleeve.augenye.cn/archives/</link>
+      <link>https://www.augenye.cn/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://sleeve.augenye.cn/archives/</guid>
+      <guid>https://www.augenye.cn/archives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Search</title>
-      <link>http://sleeve.augenye.cn/search/</link>
+      <link>https://www.augenye.cn/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://sleeve.augenye.cn/search/</guid>
+      <guid>https://www.augenye.cn/search/</guid>
       <description></description>
     </item>
     

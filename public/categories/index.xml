@@ -1,72 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on augenye的博客</title>
-    <link>http://sleeve.augenye.cn/categories/</link>
-    <description>Recent content in Categories on augenye的博客</description>
+    <title>Categories on augenye</title>
+    <link>https://www.augenye.cn/categories/</link>
+    <description>Recent content in Categories on augenye</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sleeve.augenye.cn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.augenye.cn/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>服务端</title>
-      <link>http://sleeve.augenye.cn/categories/%E6%9C%8D%E5%8A%A1%E7%AB%AF/</link>
+      <link>https://www.augenye.cn/categories/%E6%9C%8D%E5%8A%A1%E7%AB%AF/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://sleeve.augenye.cn/categories/%E6%9C%8D%E5%8A%A1%E7%AB%AF/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>技术</title>
-      <link>http://sleeve.augenye.cn/categories/%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://sleeve.augenye.cn/categories/%E6%8A%80%E6%9C%AF/</guid>
+      <guid>https://www.augenye.cn/categories/%E6%9C%8D%E5%8A%A1%E7%AB%AF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Test</title>
-      <link>http://sleeve.augenye.cn/categories/test/</link>
-      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      <link>https://www.augenye.cn/categories/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://sleeve.augenye.cn/categories/test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>测试</title>
-      <link>http://sleeve.augenye.cn/categories/%E6%B5%8B%E8%AF%95/</link>
-      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://sleeve.augenye.cn/categories/%E6%B5%8B%E8%AF%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>syntax</title>
-      <link>http://sleeve.augenye.cn/categories/syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://sleeve.augenye.cn/categories/syntax/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>themes</title>
-      <link>http://sleeve.augenye.cn/categories/themes/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://sleeve.augenye.cn/categories/themes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Test with whitespaces</title>
-      <link>http://sleeve.augenye.cn/categories/test-with-whitespaces/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://sleeve.augenye.cn/categories/test-with-whitespaces/</guid>
+      <guid>https://www.augenye.cn/categories/test/</guid>
       <description></description>
     </item>
     

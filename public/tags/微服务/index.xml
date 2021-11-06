@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>微服务 on augenye的博客</title>
-    <link>http://sleeve.augenye.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</link>
-    <description>Recent content in 微服务 on augenye的博客</description>
+    <title>微服务 on augenye</title>
+    <link>https://www.augenye.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</link>
+    <description>Recent content in 微服务 on augenye</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sleeve.augenye.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.augenye.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DDD - Domain Primitive</title>
-      <link>http://sleeve.augenye.cn/p/ddd-domain-primitive/</link>
+      <link>https://www.augenye.cn/p/ddd-domain-primitive/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://sleeve.augenye.cn/p/ddd-domain-primitive/</guid>
+      <guid>https://www.augenye.cn/p/ddd-domain-primitive/</guid>
       <description>Domain Primitive Link: https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu
 Link: https://juejin.cn/post/6844904177207001101
 应用架构 Link: https://developer.aliyun.com/article/719251
