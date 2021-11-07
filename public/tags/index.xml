@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on augenye</title>
+    <title>Tags on augenye&#39;s blog</title>
     <link>https://www.augenye.cn/tags/</link>
-    <description>Recent content in Tags on augenye</description>
+    <description>Recent content in Tags on augenye&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.augenye.cn/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -13,6 +13,24 @@
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.augenye.cn/tags/ddd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://www.augenye.cn/tags/java/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.augenye.cn/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>多线程</title>
+      <link>https://www.augenye.cn/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.augenye.cn/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</guid>
       <description></description>
     </item>
     

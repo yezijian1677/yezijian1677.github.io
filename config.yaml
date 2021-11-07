@@ -2,7 +2,7 @@ baseurl: https://www.augenye.cn
 languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 5
-title: augenye
+title: augenye's blog
 
 # Robots
 enableRobotsTXT: true
@@ -38,7 +38,7 @@ params:
 
     sidebar:
         emoji: 🍭
-        subtitle: 落俗在所难免，浪漫至死不渝
+        subtitle: 爱意东深西落
         avatar:
             local: true
             src: img/avatar.jpeg
