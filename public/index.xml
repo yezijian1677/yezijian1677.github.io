@@ -145,6 +145,8 @@
 		&lt;figcaption&gt;wait原理&lt;/figcaption&gt;
 		
 	&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;线程安全&#34;&gt;线程安全&lt;/h3&gt;
+&lt;p&gt;多个线程访问一个对象，不需要考虑线程调度，也不需要进行额外的同步操作，总能获取正确的结果，那么这个对象是线程安全的（多线程情况下，不需要进行同步加锁操作就可以获取正确的执行结果，就是线程安全）&lt;/p&gt;
 </description>
         </item>
         
