@@ -13,20 +13,30 @@
         
         <guid>https://www.augenye.cn/p/ddd-domain-primitive/</guid>
         <description>&lt;h2 id=&#34;domain-primitive&#34;&gt;Domain Primitive&lt;/h2&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu&#34;&gt;https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://juejin.cn/post/6844904177207001101&#34;&gt;https://juejin.cn/post/6844904177207001101&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://developer.aliyun.com/article/716908?spm=a2c6h.14164896.0.0.1387603dS7AzNu&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6844904177207001101&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://juejin.cn/post/6844904177207001101&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;应用架构&#34;&gt;应用架构&lt;/h2&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://developer.aliyun.com/article/719251&#34;&gt;https://developer.aliyun.com/article/719251&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://juejin.cn/post/6912228908075057166&#34;&gt;https://juejin.cn/post/6912228908075057166&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/article/719251&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://developer.aliyun.com/article/719251&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6912228908075057166&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://juejin.cn/post/6912228908075057166&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;repository&#34;&gt;Repository&lt;/h2&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://developer.aliyun.com/article/758292&#34;&gt;https://developer.aliyun.com/article/758292&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://juejin.cn/post/6845166890554228744&#34;&gt;https://juejin.cn/post/6845166890554228744&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/article/758292&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://developer.aliyun.com/article/758292&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6845166890554228744&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://juejin.cn/post/6845166890554228744&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;领域层设计规范&#34;&gt;领域层设计规范&lt;/h2&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://developer.aliyun.com/article/784117?spm=a2c6h.12873639.0.0.23c344e7KWlCOb&#34;&gt;https://developer.aliyun.com/article/784117?spm=a2c6h.12873639.0.0.23c344e7KWlCOb&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://juejin.cn/post/6912228908075057166&#34;&gt;https://juejin.cn/post/6912228908075057166&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/article/784117?spm=a2c6h.12873639.0.0.23c344e7KWlCOb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://developer.aliyun.com/article/784117?spm=a2c6h.12873639.0.0.23c344e7KWlCOb&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6912228908075057166&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://juejin.cn/post/6912228908075057166&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;避免流水账&#34;&gt;避免流水账&lt;/h2&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://developer.aliyun.com/article/783664?spm=a2c6h.12873639.0.0.1d0c2cf1JlpmgQ&#34;&gt;https://developer.aliyun.com/article/783664?spm=a2c6h.12873639.0.0.1d0c2cf1JlpmgQ&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://juejin.cn/post/6953141151931039758&#34;&gt;https://juejin.cn/post/6953141151931039758&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/article/783664?spm=a2c6h.12873639.0.0.1d0c2cf1JlpmgQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://developer.aliyun.com/article/783664?spm=a2c6h.12873639.0.0.1d0c2cf1JlpmgQ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6953141151931039758&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://juejin.cn/post/6953141151931039758&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -104,7 +114,7 @@
 &lt;h2 id=&#34;线程状态&#34;&gt;线程状态&lt;/h2&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 94; flex-basis: 227px&#34;&gt;
 		&lt;a href=&#34;https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/thread-status.png&#34; data-size=&#34;1188x1252&#34;&gt;&lt;img src=&#34;https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/thread-status.png&#34;
-				srcset=&#34;https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/thread-status_huffe8d02773e9f87c4456e1afb21ef1dd_460403_480x0_resize_box_2.png 480w, https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/thread-status_huffe8d02773e9f87c4456e1afb21ef1dd_460403_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/thread-status_huffe8d02773e9f87c4456e1afb21ef1dd_460403_480x0_resize_box_3.png 480w, https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/thread-status_huffe8d02773e9f87c4456e1afb21ef1dd_460403_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;1188&#34;
 				height=&#34;1252&#34;
 				loading=&#34;lazy&#34;
@@ -135,7 +145,7 @@
 &lt;h3 id=&#34;wait原理&#34;&gt;Wait原理&lt;/h3&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 107; flex-basis: 258px&#34;&gt;
 		&lt;a href=&#34;https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/wait.png&#34; data-size=&#34;1008x936&#34;&gt;&lt;img src=&#34;https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/wait.png&#34;
-				srcset=&#34;https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/wait_hucbf97551630b2eea3632516aec975d40_440101_480x0_resize_box_2.png 480w, https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/wait_hucbf97551630b2eea3632516aec975d40_440101_1024x0_resize_box_2.png 1024w&#34;
+				srcset=&#34;https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/wait_hucbf97551630b2eea3632516aec975d40_440101_480x0_resize_box_3.png 480w, https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/wait_hucbf97551630b2eea3632516aec975d40_440101_1024x0_resize_box_3.png 1024w&#34;
 				width=&#34;1008&#34;
 				height=&#34;936&#34;
 				loading=&#34;lazy&#34;
@@ -148,6 +158,91 @@
 &lt;h3 id=&#34;线程安全&#34;&gt;线程安全&lt;/h3&gt;
 &lt;p&gt;多个线程访问一个对象，不需要考虑线程调度，也不需要进行额外的同步操作，总能获取正确的结果，那么这个对象是线程安全的（多线程情况下，不需要进行同步加锁操作就可以获取正确的执行结果，就是线程安全）&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title>服务归因[ACE]</title>
+        <link>https://www.augenye.cn/p/%E6%9C%8D%E5%8A%A1%E5%BD%92%E5%9B%A0ace/</link>
+        <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.augenye.cn/p/%E6%9C%8D%E5%8A%A1%E5%BD%92%E5%9B%A0ace/</guid>
+        <description>&lt;p&gt;参考天猫服务归因，此框架的大部分概念来自于下面的文章，自行实现框架的思路也与之一致。&lt;!-- raw HTML omitted --&gt;用下文的话来说，此框架主要是对以下内容的思考：&lt;!-- raw HTML omitted --&gt;对“属性-分类-执行”问题的产品化思考与实践上的实践。&lt;!-- raw HTML omitted --&gt;解决了属性分类的通用性问题，具有良好的扩展性和代码语义&lt;/p&gt;
+&lt;h2 id=&#34;组件&#34;&gt;组件&lt;/h2&gt;
+&lt;p&gt;使用ACE需要了解的组件，通过这些组件搭配使用，才能使用好这个框架，解决复杂业务逻辑问题。&lt;/p&gt;
+&lt;h3 id=&#34;executor执行器&#34;&gt;Executor（执行器）&lt;/h3&gt;
+&lt;p&gt;执行器，顾名思义，是在业务语义匹配后执行的一组逻辑。&lt;!-- raw HTML omitted --&gt;执行器被归因器所绑定，可以被多个归因器绑定， 能够进行复用，但是这个复用的粒度需要开发者自行考量&lt;!-- raw HTML omitted --&gt;eg: 定义一个发送微信消息的执行器，它将会发送微信消息，定义有三个要素&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;继承 &lt;code&gt;IExecutor&lt;/code&gt;接口&lt;/li&gt;
+&lt;li&gt;注解定义执行器信息，必填的为 &lt;code&gt;name&lt;/code&gt;，后续归因器绑定的执行器，也是基于此名称&lt;/li&gt;
+&lt;li&gt;实现&lt;code&gt;execute&lt;/code&gt;方法，执行这个执行器专属的业务功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2022/png/1003102/1664900838982-8d382a87-fdc0-44b7-b2cf-ec42856a16af.png#clientId=u6e33e77f-7629-4&amp;amp;crop=0&amp;amp;crop=0&amp;amp;crop=1&amp;amp;crop=1&amp;amp;from=paste&amp;amp;height=478&amp;amp;id=u4f9c90ab&amp;amp;margin=%5Bobject%20Object%5D&amp;amp;name=image.png&amp;amp;originHeight=956&amp;amp;originWidth=1300&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=199400&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u351d3ebd-58ea-4378-89c3-04d32277a6b&amp;amp;title=&amp;amp;width=650&#34; alt=&#34;image.png&#34;  /&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;attributor属性校验器&#34;&gt;Attributor（属性校验器）&lt;/h3&gt;
+&lt;p&gt;属性校验器，&lt;strong&gt;针对一个属性进行&lt;/strong&gt;校验，针对一个属性可以用不同的处理规则。&lt;!-- raw HTML omitted --&gt;可以通过内置的注解&lt;code&gt;RulerMethod&lt;/code&gt;定义一个此属性的校验方法，这是一个模板方法&lt;!-- raw HTML omitted --&gt;需要开发者去定义好，此方法接受两个参数 &lt;code&gt;AceContext 和 fieldName&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AceContext：归因上下文，整个归因需要用到的信息都在这个对象里&lt;/li&gt;
+&lt;li&gt;fieldName：此校验器校验的字段名称&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;eg: 定一个平台属性的校验器，当平台有很多，如微信，抖音，微博等等，现在需要对平台这个属性进行校验，这时候由于我们是需要判断平台的类型，所以我们定一个判断类型是否匹配的校验方法&lt;!-- raw HTML omitted --&gt;定义这一类校验器有以下步骤&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实现 &lt;code&gt;IAttributor&lt;/code&gt;接口&lt;/li&gt;
+&lt;li&gt;注解定义属性校验器的信息，这个是归因器绑定的属性校验器&lt;/li&gt;
+&lt;li&gt;定义这个属性自己的校验方法，可以有多个，&lt;strong&gt;但是入参固定&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2022/png/1003102/1664901942383-9780f645-ed27-4902-9dc4-dbf8ba8d8d63.png#clientId=u6e33e77f-7629-4&amp;amp;crop=0&amp;amp;crop=0&amp;amp;crop=1&amp;amp;crop=1&amp;amp;from=paste&amp;amp;height=499&amp;amp;id=ua8cd20bf&amp;amp;margin=%5Bobject%20Object%5D&amp;amp;name=image.png&amp;amp;originHeight=998&amp;amp;originWidth=1934&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=226008&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u60623053-9812-40de-8f29-d028843f88c&amp;amp;title=&amp;amp;width=967&#34; alt=&#34;image.png&#34;  /&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;classifier归因器&#34;&gt;Classifier（归因器）&lt;/h3&gt;
+&lt;p&gt;归因器，针对一组属性规则进行校验，满足条件则会执行绑定的执行器。&lt;!-- raw HTML omitted --&gt;所以定义一个归因器，它有以下的要素&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实现 &lt;code&gt;IClassifier&lt;/code&gt;接口，无需实现内置方法，已有默认执行逻辑，除非你需要自定义自己的归因流程&lt;/li&gt;
+&lt;li&gt;注解定义归因器的信息
+&lt;ul&gt;
+&lt;li&gt;归因器名称：用于场景绑定&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;matcher&lt;/code&gt;：任意Matcher绑定的&lt;strong&gt;属性校验无效（false），则该归因无效&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filter&lt;/code&gt;：任意Matcher绑定的&lt;strong&gt;属性校验有效（true），则该归因无效&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;executor&lt;/code&gt;：场景绑定的执行器，执行一组业务逻辑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;eg: 发送微信消息的归因器，当 &lt;code&gt;platform&lt;/code&gt;为&lt;code&gt;wechat&lt;/code&gt;的时候，执行发送微信消息&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2022/png/1003102/1664902477361-d29db107-2f43-44d9-9606-7dce8b101ae5.png#clientId=u6e33e77f-7629-4&amp;amp;crop=0&amp;amp;crop=0&amp;amp;crop=1&amp;amp;crop=1&amp;amp;from=paste&amp;amp;height=237&amp;amp;id=u693aa016&amp;amp;margin=%5Bobject%20Object%5D&amp;amp;name=image.png&amp;amp;originHeight=474&amp;amp;originWidth=1748&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=93995&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u2de2721b-c409-426c-83df-6981d1d5eaf&amp;amp;title=&amp;amp;width=874&#34; alt=&#34;image.png&#34;  /&gt;&lt;!-- raw HTML omitted --&gt;eg: 抖音平台的发送消息逻辑也大同消息，唯一的不同是属性校验方法的值不同和关联的执行器不同&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2022/png/1003102/1664903898660-518273e4-cba0-4970-876a-be562682e059.png#clientId=u6e33e77f-7629-4&amp;amp;crop=0&amp;amp;crop=0&amp;amp;crop=1&amp;amp;crop=1&amp;amp;from=paste&amp;amp;height=240&amp;amp;id=uaf59fd6a&amp;amp;margin=%5Bobject%20Object%5D&amp;amp;name=image.png&amp;amp;originHeight=480&amp;amp;originWidth=1754&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=95789&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u841e623a-997c-43a4-94e7-8e4dbca0d8e&amp;amp;title=&amp;amp;width=877&#34; alt=&#34;image.png&#34;  /&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;scene归因场景&#34;&gt;Scene（归因场景）&lt;/h3&gt;
+&lt;p&gt;归因场景，绑定一组归因器，场景主要是聚合一组业务逻辑，代表一组归因器属于一个场景，场景有两种执行模式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SINGLE: &lt;strong&gt;单次匹配&lt;/strong&gt;，任意一个归因器执行成功，此场景成功，执行对应的场景执行器，停止后续场景匹配，&lt;strong&gt;仅所有归因无效，该场景无效&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;MULTI：&lt;strong&gt;多次匹配&lt;/strong&gt;，任意一个归因器执行成功，此场景成功，执行对应的归因器绑定的执行器，继续对后续场景进行匹配，若有匹配中，则也执行对应的执行器，&lt;strong&gt;仅所有归因无效，该场景无效&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;定义一个场景的逻辑很简单，它和归因器一样，无需实现对应的方法，场景已有内置逻辑，仅在需要扩展自己的场景逻辑的时候，重写该方法。虾&lt;!-- raw HTML omitted --&gt;定义场景步骤如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实现 &lt;code&gt;IScene&lt;/code&gt;接口&lt;/li&gt;
+&lt;li&gt;注解定义场景信息
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;classifier&lt;/code&gt;：归因器列表，用上述定义的长巾&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;schema&lt;/code&gt;：执行模式，如上所描述，SINGLE为默认模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;eg：发送消息，根据平台类型归因，匹配后执行对应的发送消息逻辑&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2022/png/1003102/1664904768658-7f185fcd-35ee-487d-b9dc-ff110dcf3171.png#clientId=u6e33e77f-7629-4&amp;amp;crop=0&amp;amp;crop=0&amp;amp;crop=1&amp;amp;crop=1&amp;amp;from=paste&amp;amp;height=187&amp;amp;id=u72f6a34f&amp;amp;margin=%5Bobject%20Object%5D&amp;amp;name=image.png&amp;amp;originHeight=374&amp;amp;originWidth=1394&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=75296&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u53c747c4-96ac-4b19-bf51-25d2db63cc9&amp;amp;title=&amp;amp;width=697&#34; alt=&#34;image.png&#34;  /&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;aceworker场景归因执行&#34;&gt;AceWorker（场景归因执行）&lt;/h3&gt;
+&lt;p&gt;上面都定义好了，该如何使用呢，这就需要使用的AceWorker#process，具体使用用例如下，他就会针对上述进行归因，匹配后执行&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2022/png/1003102/1664903972293-bb591005-c413-4da8-bdd2-bc9e845213d0.png#clientId=u6e33e77f-7629-4&amp;amp;crop=0&amp;amp;crop=0&amp;amp;crop=1&amp;amp;crop=1&amp;amp;from=paste&amp;amp;height=242&amp;amp;id=u2dd5d1b2&amp;amp;margin=%5Bobject%20Object%5D&amp;amp;name=image.png&amp;amp;originHeight=484&amp;amp;originWidth=1168&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=117311&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u8eca3285-8bfa-41ec-99a4-537acdc8d3e&amp;amp;title=&amp;amp;width=584&#34; alt=&#34;image.png&#34;  /&gt;&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2022/png/1003102/1664904149777-9b05c962-017b-4da4-8b77-c4a055e5cac3.png#clientId=u6e33e77f-7629-4&amp;amp;crop=0&amp;amp;crop=0&amp;amp;crop=1&amp;amp;crop=1&amp;amp;from=paste&amp;amp;height=63&amp;amp;id=u5f842d00&amp;amp;margin=%5Bobject%20Object%5D&amp;amp;name=image.png&amp;amp;originHeight=126&amp;amp;originWidth=1210&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=21765&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u799761d5-6301-49df-afb9-d32e64a832f&amp;amp;title=&amp;amp;width=605&#34; alt=&#34;image.png&#34;  /&gt;&lt;!-- raw HTML omitted --&gt;修改 platform 的值为 douyin , 根据归因的规则，可以知道，将会执行抖音消息的执行器&lt;!-- raw HTML omitted --&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2022/png/1003102/1664904786176-ba4b4309-fe6a-4872-9f22-0de2add069fc.png#clientId=u6e33e77f-7629-4&amp;amp;crop=0&amp;amp;crop=0&amp;amp;crop=1&amp;amp;crop=1&amp;amp;from=paste&amp;amp;height=54&amp;amp;id=u49aeac7a&amp;amp;margin=%5Bobject%20Object%5D&amp;amp;name=image.png&amp;amp;originHeight=108&amp;amp;originWidth=1158&amp;amp;originalType=binary&amp;amp;ratio=1&amp;amp;rotation=0&amp;amp;showTitle=false&amp;amp;size=20679&amp;amp;status=done&amp;amp;style=none&amp;amp;taskId=u4077d80a-6b93-489f-8d03-c4a0f7e7cb6&amp;amp;title=&amp;amp;width=579&#34; alt=&#34;image.png&#34;  /&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;其他&#34;&gt;其他&lt;/h3&gt;
+&lt;p&gt;还有其他内置的工具类，后续介绍
+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;引入依赖&#34;&gt;引入依赖&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.augenye.ace&lt;span class=&#34;nt&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;universe-ace&lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;1.0-SNAPSHOT&lt;span class=&#34;nt&#34;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;开启ace配置&#34;&gt;开启ace配置&lt;/h3&gt;
+&lt;p&gt;集成了自动状态，springboot项目直接使用参数装配开启ACE&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-properties&#34; data-lang=&#34;properties&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;ace.switch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         
     </channel>

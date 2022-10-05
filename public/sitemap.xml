@@ -1,83 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://www.augenye.cn/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/categories/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/tags/ddd/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/p/ddd-domain-primitive/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/tags/java/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/post/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/tags/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/p/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://www.augenye.cn/p/%E6%9C%8D%E5%8A%A1%E5%BD%92%E5%9B%A0ace/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.augenye.cn/categories/%E6%9C%8D%E5%8A%A1%E7%AB%AF/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://www.augenye.cn/tags/%E7%BB%84%E4%BB%B6/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.augenye.cn/about/</loc>
     <lastmod>2021-06-27T14:23:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/page/</loc>
     <lastmod>2021-06-27T14:23:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/search/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.augenye.cn/categories/test/</loc>
   </url>
-  
 </urlset>
