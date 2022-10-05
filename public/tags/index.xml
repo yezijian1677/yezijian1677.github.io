@@ -6,7 +6,16 @@
     <description>Recent content in Tags on augenye&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.augenye.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.augenye.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>组件</title>
+      <link>https://www.augenye.cn/tags/%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.augenye.cn/tags/%E7%BB%84%E4%BB%B6/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>DDD</title>
       <link>https://www.augenye.cn/tags/ddd/</link>
@@ -40,15 +49,6 @@
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.augenye.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>组件</title>
-      <link>https://www.augenye.cn/tags/%E7%BB%84%E4%BB%B6/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.augenye.cn/tags/%E7%BB%84%E4%BB%B6/</guid>
       <description></description>
     </item>
     

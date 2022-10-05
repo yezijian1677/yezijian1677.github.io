@@ -1,7 +1,7 @@
 +++
 author = "augenye"
 title = "服务归因[ACE]"
-date = "2021-08-01"
+date = "2022-10-05"
 categories = [
 "服务端"
 ]
@@ -20,7 +20,7 @@ tags = [
 - 注解定义执行器信息，必填的为 `name`，后续归因器绑定的执行器，也是基于此名称
 - 实现`execute`方法，执行这个执行器专属的业务功能
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/1003102/1664900838982-8d382a87-fdc0-44b7-b2cf-ec42856a16af.png#clientId=u6e33e77f-7629-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=478&id=u4f9c90ab&margin=%5Bobject%20Object%5D&name=image.png&originHeight=956&originWidth=1300&originalType=binary&ratio=1&rotation=0&showTitle=false&size=199400&status=done&style=none&taskId=u351d3ebd-58ea-4378-89c3-04d32277a6b&title=&width=650)
+![执行器](http://img.augenye.cn/images/20221006/7e7b56184cc34805a32477320bc57632.png?imageView2/0/interlace/1/q/100|imageslim)
 <a name="Zp8mV"></a>
 ### Attributor（属性校验器）
 属性校验器，**针对一个属性进行**校验，针对一个属性可以用不同的处理规则。<br />可以通过内置的注解`RulerMethod`定义一个此属性的校验方法，这是一个模板方法<br />需要开发者去定义好，此方法接受两个参数 `AceContext 和 fieldName`
@@ -34,7 +34,7 @@ eg: 定一个平台属性的校验器，当平台有很多，如微信，抖音�
 - 注解定义属性校验器的信息，这个是归因器绑定的属性校验器
 - 定义这个属性自己的校验方法，可以有多个，**但是入参固定**
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/1003102/1664901942383-9780f645-ed27-4902-9dc4-dbf8ba8d8d63.png#clientId=u6e33e77f-7629-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=499&id=ua8cd20bf&margin=%5Bobject%20Object%5D&name=image.png&originHeight=998&originWidth=1934&originalType=binary&ratio=1&rotation=0&showTitle=false&size=226008&status=done&style=none&taskId=u60623053-9812-40de-8f29-d028843f88c&title=&width=967)
+![属性校验器](http://img.augenye.cn/images/20221006/8b9ef4e606684c67a3f705a1ae6ca462.png?imageView2/0/interlace/1/q/100|imageslim)
 <a name="f3EX2"></a>
 ### Classifier（归因器）
 归因器，针对一组属性规则进行校验，满足条件则会执行绑定的执行器。<br />所以定义一个归因器，它有以下的要素
@@ -46,7 +46,7 @@ eg: 定一个平台属性的校验器，当平台有很多，如微信，抖音�
     - `filter`：任意Matcher绑定的**属性校验有效（true），则该归因无效**
     - `executor`：场景绑定的执行器，执行一组业务逻辑
 
-eg: 发送微信消息的归因器，当 `platform`为`wechat`的时候，执行发送微信消息<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1003102/1664902477361-d29db107-2f43-44d9-9606-7dce8b101ae5.png#clientId=u6e33e77f-7629-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=237&id=u693aa016&margin=%5Bobject%20Object%5D&name=image.png&originHeight=474&originWidth=1748&originalType=binary&ratio=1&rotation=0&showTitle=false&size=93995&status=done&style=none&taskId=u2de2721b-c409-426c-83df-6981d1d5eaf&title=&width=874)<br />eg: 抖音平台的发送消息逻辑也大同消息，唯一的不同是属性校验方法的值不同和关联的执行器不同<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1003102/1664903898660-518273e4-cba0-4970-876a-be562682e059.png#clientId=u6e33e77f-7629-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=240&id=uaf59fd6a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=480&originWidth=1754&originalType=binary&ratio=1&rotation=0&showTitle=false&size=95789&status=done&style=none&taskId=u841e623a-997c-43a4-94e7-8e4dbca0d8e&title=&width=877)
+eg: 发送微信消息的归因器，当 `platform`为`wechat`的时候，执行发送微信消息<br />![归因器1](http://img.augenye.cn/images/20221006/92057fa2a8cc43709e08b35e5acbe5b9.png?imageView2/0/interlace/1/q/100|imageslim)<br />eg: 抖音平台的发送消息逻辑也大同消息，唯一的不同是属性校验方法的值不同和关联的执行器不同<br />![归因器2](http://img.augenye.cn/images/20221006/d6a79c50aad34a4f8944c8b6b58b7b85.png?imageView2/0/interlace/1/q/100|imageslim)
 <a name="gt0Lu"></a>
 ### Scene（归因场景）
 归因场景，绑定一组归因器，场景主要是聚合一组业务逻辑，代表一组归因器属于一个场景，场景有两种执行模式
@@ -61,10 +61,14 @@ eg: 发送微信消息的归因器，当 `platform`为`wechat`的时候，执行
     - `classifier`：归因器列表，用上述定义的长巾
     - `schema`：执行模式，如上所描述，SINGLE为默认模式
 
-eg：发送消息，根据平台类型归因，匹配后执行对应的发送消息逻辑<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1003102/1664904768658-7f185fcd-35ee-487d-b9dc-ff110dcf3171.png#clientId=u6e33e77f-7629-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=187&id=u72f6a34f&margin=%5Bobject%20Object%5D&name=image.png&originHeight=374&originWidth=1394&originalType=binary&ratio=1&rotation=0&showTitle=false&size=75296&status=done&style=none&taskId=u53c747c4-96ac-4b19-bf51-25d2db63cc9&title=&width=697)
+eg：发送消息，根据平台类型归因，匹配后执行对应的发送消息逻辑<br />![归因场景](http://img.augenye.cn/images/20221006/a8eb0d5ad48d4b3e89ae535506fed747.png?imageView2/0/interlace/1/q/100|imageslim)
 <a name="UpLMr"></a>
 ### AceWorker（场景归因执行）
-上面都定义好了，该如何使用呢，这就需要使用的AceWorker#process，具体使用用例如下，他就会针对上述进行归因，匹配后执行<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1003102/1664903972293-bb591005-c413-4da8-bdd2-bc9e845213d0.png#clientId=u6e33e77f-7629-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=242&id=u2dd5d1b2&margin=%5Bobject%20Object%5D&name=image.png&originHeight=484&originWidth=1168&originalType=binary&ratio=1&rotation=0&showTitle=false&size=117311&status=done&style=none&taskId=u8eca3285-8bfa-41ec-99a4-537acdc8d3e&title=&width=584)<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1003102/1664904149777-9b05c962-017b-4da4-8b77-c4a055e5cac3.png#clientId=u6e33e77f-7629-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=63&id=u5f842d00&margin=%5Bobject%20Object%5D&name=image.png&originHeight=126&originWidth=1210&originalType=binary&ratio=1&rotation=0&showTitle=false&size=21765&status=done&style=none&taskId=u799761d5-6301-49df-afb9-d32e64a832f&title=&width=605)<br />修改 platform 的值为 douyin , 根据归因的规则，可以知道，将会执行抖音消息的执行器<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1003102/1664904786176-ba4b4309-fe6a-4872-9f22-0de2add069fc.png#clientId=u6e33e77f-7629-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=54&id=u49aeac7a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=108&originWidth=1158&originalType=binary&ratio=1&rotation=0&showTitle=false&size=20679&status=done&style=none&taskId=u4077d80a-6b93-489f-8d03-c4a0f7e7cb6&title=&width=579)
+上面都定义好了，该如何使用呢，这就需要使用的AceWorker#process，具体使用用例如下，他就会针对上述进行归因，匹配后执行<br />
+![aceWorker](http://img.augenye.cn/images/20221006/bf77b56170724deda057b0106761a5bf.png?imageView2/0/interlace/1/q/100|imageslim)
+<br />
+![aceworker1](http://img.augenye.cn/images/20221006/62ccdf67efe749b2801b5cde044b7751.png?imageView2/0/interlace/1/q/100|imageslim)
+<br />修改 platform 的值为 douyin , 根据归因的规则，可以知道，将会执行抖音消息的执行器<br />![aceworker4](http://img.augenye.cn/images/20221006/43e82f42749a4395b8a29632790cdc13.png?imageView2/0/interlace/1/q/100|imageslim)
 <a name="AmXsf"></a>
 ### 其他
 还有其他内置的工具类，后续介绍
