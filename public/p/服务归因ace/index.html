@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='参考天猫服务归因，此框架的大部分概念来自于下面的文章，自行实现框架的思路也与之一致。用下文的话来说，此框架主要是对以下内容的思考：对“属性-分类-执行”问题的产品化思考与实践上的实践。解决了属性分类的通用性问题，具有良好的扩展性和代码语义
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='参考天猫服务归因，此框架的大部分概念来自于下面的文章 服务归因组件，自行实现框架的思路也与之一致。用下文的话来说，此框架主要是对以下内容的思考：对“属性-分类-执行”问题的产品化思考与实践上的实践。解决了属性分类的通用性问题，具有良好的扩展性和代码语义
 组件 使用ACE需要了解的组件，通过这些组件搭配使用，才能使用好这个框架，解决复杂业务逻辑问题。
 Executor（执行器） 执行器，顾名思义，是在业务语义匹配后执行的一组逻辑。执行器被归因器所绑定，可以被多个归因器绑定， 能够进行复用，但是这个复用的粒度需要开发者自行考量eg: 定义一个发送微信消息的执行器，它将会发送微信消息，定义有三个要素
 继承 IExecutor接口 注解定义执行器信息，必填的为 name，后续归因器绑定的执行器，也是基于此名称 实现execute方法，执行这个执行器专属的业务功能 Attributor（属性校验器） 属性校验器，针对一个属性进行校验，针对一个属性可以用不同的处理规则。可以通过内置的注解RulerMethod定义一个此属性的校验方法，这是一个模板方法需要开发者去定义好，此方法接受两个参数 AceContext 和 fieldName
@@ -9,13 +9,12 @@ AceContext：归因上下文，整个归因需要用到的信息都在这个对�
 实现 IAttributor接口 注解定义属性校验器的信息，这个是归因器绑定的属性校验器 定义这个属性自己的校验方法，可以有多个，但是入参固定 Classifier（归因器） 归因器，针对一组属性规则进行校验，满足条件则会执行绑定的执行器。所以定义一个归因器，它有以下的要素
 实现 IClassifier接口，无需实现内置方法，已有默认执行逻辑，除非你需要自定义自己的归因流程 注解定义归因器的信息 归因器名称：用于场景绑定 matcher：任意Matcher绑定的属性校验无效（false），则该归因无效 filter：任意Matcher绑定的属性校验有效（true），则该归因无效 executor：场景绑定的执行器，执行一组业务逻辑 eg: 发送微信消息的归因器，当 platform为wechat的时候，执行发送微信消息eg: 抖音平台的发送消息逻辑也大同消息，唯一的不同是属性校验方法的值不同和关联的执行器不同 Scene（归因场景） 归因场景，绑定一组归因器，场景主要是聚合一组业务逻辑，代表一组归因器属于一个场景，场景有两种执行模式
 SINGLE: 单次匹配，任意一个归因器执行成功，此场景成功，执行对应的场景执行器，停止后续场景匹配，仅所有归因无效，该场景无效 MULTI：多次匹配，任意一个归因器执行成功，此场景成功，执行对应的归因器绑定的执行器，继续对后续场景进行匹配，若有匹配中，则也执行对应的执行器，仅所有归因无效，该场景无效 定义一个场景的逻辑很简单，它和归因器一样，无需实现对应的方法，场景已有内置逻辑，仅在需要扩展自己的场景逻辑的时候，重写该方法。虾定义场景步骤如下：
-实现 IScene接口 注解定义场景信息 classifier：归因器列表，用上述定义的长巾 schema：执行模式，如上所描述，SINGLE为默认模式 eg：发送消息，根据平台类型归因，匹配后执行对应的发送消息逻辑 AceWorker（场景归因执行） 上面都定义好了，该如何使用呢，这就需要使用的AceWorker#process，具体使用用例如下，他就会针对上述进行归因，匹配后执行 修改 platform 的值为 douyin , 根据归因的规则，可以知道，将会执行抖音消息的执行器 其他 还有其他内置的工具类，后续介绍 使用 引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.augenye.ace&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;universe-ace&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 开启ace配置 集成了自动状态，springboot项目直接使用参数装配开启ACE
-ace.switch=true '><title>服务归因[ACE]</title>
+实现 IScene接口 注解定义场景信息 classifier：归因器列表，用上述定义的长巾 schema：执行模式，如上所描述，SINGLE为默认模式 eg：发送消息，根据平台类型归因，匹配后执行对应的发送消息逻辑 AceWorker（场景归因执行） 上面都定义好了，该如何使用呢，这就需要使用的AceWorker#process，具体使用用例如下，他就会针对上述进行归因，匹配后执行 修改 platform 的值为 douyin , 根据归因的规则，可以知道，将会执行抖音消息的执行器 其他 还有其他内置的工具类，后续介绍 使用 引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.augenye.ace&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;universe-ace&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 开启ace配置 集成了自动状态，springboot项目直接使用参数装配开启ACE'><title>服务归因[ACE]</title>
 
 <link rel='canonical' href='https://www.augenye.cn/p/%E6%9C%8D%E5%8A%A1%E5%BD%92%E5%9B%A0ace/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='服务归因[ACE]'>
-<meta property='og:description' content='参考天猫服务归因，此框架的大部分概念来自于下面的文章，自行实现框架的思路也与之一致。用下文的话来说，此框架主要是对以下内容的思考：对“属性-分类-执行”问题的产品化思考与实践上的实践。解决了属性分类的通用性问题，具有良好的扩展性和代码语义
+<meta property='og:description' content='参考天猫服务归因，此框架的大部分概念来自于下面的文章 服务归因组件，自行实现框架的思路也与之一致。用下文的话来说，此框架主要是对以下内容的思考：对“属性-分类-执行”问题的产品化思考与实践上的实践。解决了属性分类的通用性问题，具有良好的扩展性和代码语义
 组件 使用ACE需要了解的组件，通过这些组件搭配使用，才能使用好这个框架，解决复杂业务逻辑问题。
 Executor（执行器） 执行器，顾名思义，是在业务语义匹配后执行的一组逻辑。执行器被归因器所绑定，可以被多个归因器绑定， 能够进行复用，但是这个复用的粒度需要开发者自行考量eg: 定义一个发送微信消息的执行器，它将会发送微信消息，定义有三个要素
 继承 IExecutor接口 注解定义执行器信息，必填的为 name，后续归因器绑定的执行器，也是基于此名称 实现execute方法，执行这个执行器专属的业务功能 Attributor（属性校验器） 属性校验器，针对一个属性进行校验，针对一个属性可以用不同的处理规则。可以通过内置的注解RulerMethod定义一个此属性的校验方法，这是一个模板方法需要开发者去定义好，此方法接受两个参数 AceContext 和 fieldName
@@ -23,13 +22,12 @@ AceContext：归因上下文，整个归因需要用到的信息都在这个对�
 实现 IAttributor接口 注解定义属性校验器的信息，这个是归因器绑定的属性校验器 定义这个属性自己的校验方法，可以有多个，但是入参固定 Classifier（归因器） 归因器，针对一组属性规则进行校验，满足条件则会执行绑定的执行器。所以定义一个归因器，它有以下的要素
 实现 IClassifier接口，无需实现内置方法，已有默认执行逻辑，除非你需要自定义自己的归因流程 注解定义归因器的信息 归因器名称：用于场景绑定 matcher：任意Matcher绑定的属性校验无效（false），则该归因无效 filter：任意Matcher绑定的属性校验有效（true），则该归因无效 executor：场景绑定的执行器，执行一组业务逻辑 eg: 发送微信消息的归因器，当 platform为wechat的时候，执行发送微信消息eg: 抖音平台的发送消息逻辑也大同消息，唯一的不同是属性校验方法的值不同和关联的执行器不同 Scene（归因场景） 归因场景，绑定一组归因器，场景主要是聚合一组业务逻辑，代表一组归因器属于一个场景，场景有两种执行模式
 SINGLE: 单次匹配，任意一个归因器执行成功，此场景成功，执行对应的场景执行器，停止后续场景匹配，仅所有归因无效，该场景无效 MULTI：多次匹配，任意一个归因器执行成功，此场景成功，执行对应的归因器绑定的执行器，继续对后续场景进行匹配，若有匹配中，则也执行对应的执行器，仅所有归因无效，该场景无效 定义一个场景的逻辑很简单，它和归因器一样，无需实现对应的方法，场景已有内置逻辑，仅在需要扩展自己的场景逻辑的时候，重写该方法。虾定义场景步骤如下：
-实现 IScene接口 注解定义场景信息 classifier：归因器列表，用上述定义的长巾 schema：执行模式，如上所描述，SINGLE为默认模式 eg：发送消息，根据平台类型归因，匹配后执行对应的发送消息逻辑 AceWorker（场景归因执行） 上面都定义好了，该如何使用呢，这就需要使用的AceWorker#process，具体使用用例如下，他就会针对上述进行归因，匹配后执行 修改 platform 的值为 douyin , 根据归因的规则，可以知道，将会执行抖音消息的执行器 其他 还有其他内置的工具类，后续介绍 使用 引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.augenye.ace&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;universe-ace&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 开启ace配置 集成了自动状态，springboot项目直接使用参数装配开启ACE
-ace.switch=true '>
+实现 IScene接口 注解定义场景信息 classifier：归因器列表，用上述定义的长巾 schema：执行模式，如上所描述，SINGLE为默认模式 eg：发送消息，根据平台类型归因，匹配后执行对应的发送消息逻辑 AceWorker（场景归因执行） 上面都定义好了，该如何使用呢，这就需要使用的AceWorker#process，具体使用用例如下，他就会针对上述进行归因，匹配后执行 修改 platform 的值为 douyin , 根据归因的规则，可以知道，将会执行抖音消息的执行器 其他 还有其他内置的工具类，后续介绍 使用 引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.augenye.ace&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;universe-ace&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 开启ace配置 集成了自动状态，springboot项目直接使用参数装配开启ACE'>
 <meta property='og:url' content='https://www.augenye.cn/p/%E6%9C%8D%E5%8A%A1%E5%BD%92%E5%9B%A0ace/'>
 <meta property='og:site_name' content='augenye&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='组件' /><meta property='article:published_time' content='2022-10-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-10-05T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="服务归因[ACE]">
-<meta name="twitter:description" content="参考天猫服务归因，此框架的大部分概念来自于下面的文章，自行实现框架的思路也与之一致。用下文的话来说，此框架主要是对以下内容的思考：对“属性-分类-执行”问题的产品化思考与实践上的实践。解决了属性分类的通用性问题，具有良好的扩展性和代码语义
+<meta name="twitter:description" content="参考天猫服务归因，此框架的大部分概念来自于下面的文章 服务归因组件，自行实现框架的思路也与之一致。用下文的话来说，此框架主要是对以下内容的思考：对“属性-分类-执行”问题的产品化思考与实践上的实践。解决了属性分类的通用性问题，具有良好的扩展性和代码语义
 组件 使用ACE需要了解的组件，通过这些组件搭配使用，才能使用好这个框架，解决复杂业务逻辑问题。
 Executor（执行器） 执行器，顾名思义，是在业务语义匹配后执行的一组逻辑。执行器被归因器所绑定，可以被多个归因器绑定， 能够进行复用，但是这个复用的粒度需要开发者自行考量eg: 定义一个发送微信消息的执行器，它将会发送微信消息，定义有三个要素
 继承 IExecutor接口 注解定义执行器信息，必填的为 name，后续归因器绑定的执行器，也是基于此名称 实现execute方法，执行这个执行器专属的业务功能 Attributor（属性校验器） 属性校验器，针对一个属性进行校验，针对一个属性可以用不同的处理规则。可以通过内置的注解RulerMethod定义一个此属性的校验方法，这是一个模板方法需要开发者去定义好，此方法接受两个参数 AceContext 和 fieldName
@@ -37,8 +35,7 @@ AceContext：归因上下文，整个归因需要用到的信息都在这个对�
 实现 IAttributor接口 注解定义属性校验器的信息，这个是归因器绑定的属性校验器 定义这个属性自己的校验方法，可以有多个，但是入参固定 Classifier（归因器） 归因器，针对一组属性规则进行校验，满足条件则会执行绑定的执行器。所以定义一个归因器，它有以下的要素
 实现 IClassifier接口，无需实现内置方法，已有默认执行逻辑，除非你需要自定义自己的归因流程 注解定义归因器的信息 归因器名称：用于场景绑定 matcher：任意Matcher绑定的属性校验无效（false），则该归因无效 filter：任意Matcher绑定的属性校验有效（true），则该归因无效 executor：场景绑定的执行器，执行一组业务逻辑 eg: 发送微信消息的归因器，当 platform为wechat的时候，执行发送微信消息eg: 抖音平台的发送消息逻辑也大同消息，唯一的不同是属性校验方法的值不同和关联的执行器不同 Scene（归因场景） 归因场景，绑定一组归因器，场景主要是聚合一组业务逻辑，代表一组归因器属于一个场景，场景有两种执行模式
 SINGLE: 单次匹配，任意一个归因器执行成功，此场景成功，执行对应的场景执行器，停止后续场景匹配，仅所有归因无效，该场景无效 MULTI：多次匹配，任意一个归因器执行成功，此场景成功，执行对应的归因器绑定的执行器，继续对后续场景进行匹配，若有匹配中，则也执行对应的执行器，仅所有归因无效，该场景无效 定义一个场景的逻辑很简单，它和归因器一样，无需实现对应的方法，场景已有内置逻辑，仅在需要扩展自己的场景逻辑的时候，重写该方法。虾定义场景步骤如下：
-实现 IScene接口 注解定义场景信息 classifier：归因器列表，用上述定义的长巾 schema：执行模式，如上所描述，SINGLE为默认模式 eg：发送消息，根据平台类型归因，匹配后执行对应的发送消息逻辑 AceWorker（场景归因执行） 上面都定义好了，该如何使用呢，这就需要使用的AceWorker#process，具体使用用例如下，他就会针对上述进行归因，匹配后执行 修改 platform 的值为 douyin , 根据归因的规则，可以知道，将会执行抖音消息的执行器 其他 还有其他内置的工具类，后续介绍 使用 引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.augenye.ace&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;universe-ace&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 开启ace配置 集成了自动状态，springboot项目直接使用参数装配开启ACE
-ace.switch=true ">
+实现 IScene接口 注解定义场景信息 classifier：归因器列表，用上述定义的长巾 schema：执行模式，如上所描述，SINGLE为默认模式 eg：发送消息，根据平台类型归因，匹配后执行对应的发送消息逻辑 AceWorker（场景归因执行） 上面都定义好了，该如何使用呢，这就需要使用的AceWorker#process，具体使用用例如下，他就会针对上述进行归因，匹配后执行 修改 platform 的值为 douyin , 根据归因的规则，可以知道，将会执行抖音消息的执行器 其他 还有其他内置的工具类，后续介绍 使用 引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.augenye.ace&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;universe-ace&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 开启ace配置 集成了自动状态，springboot项目直接使用参数装配开启ACE">
     </head>
     <body class="
     article-page has-toc
@@ -92,7 +89,7 @@ ace.switch=true ">
     
     <header class="article-category">
         
-            <a href="/categories/%E6%9C%8D%E5%8A%A1%E7%AB%AF/" >
+            <a href="/categories/servers/" style="background-color: ; color: #fff;">
                 服务端
             </a>
         
@@ -117,7 +114,8 @@ ace.switch=true ">
 </header>
 
     <section class="article-content">
-    <p>参考天猫服务归因，此框架的大部分概念来自于下面的文章，自行实现框架的思路也与之一致。<!-- raw HTML omitted -->用下文的话来说，此框架主要是对以下内容的思考：<!-- raw HTML omitted -->对“属性-分类-执行”问题的产品化思考与实践上的实践。<!-- raw HTML omitted -->解决了属性分类的通用性问题，具有良好的扩展性和代码语义</p>
+    <p>参考天猫服务归因，此框架的大部分概念来自于下面的文章 <a class="link" href="https://developer.aliyun.com/article/777742"  target="_blank" rel="noopener"
+    >服务归因组件</a>，自行实现框架的思路也与之一致。<!-- raw HTML omitted -->用下文的话来说，此框架主要是对以下内容的思考：<!-- raw HTML omitted -->对“属性-分类-执行”问题的产品化思考与实践上的实践。<!-- raw HTML omitted -->解决了属性分类的通用性问题，具有良好的扩展性和代码语义</p>
 <h2 id="组件">组件</h2>
 <p>使用ACE需要了解的组件，通过这些组件搭配使用，才能使用好这个框架，解决复杂业务逻辑问题。</p>
 <h3 id="executor执行器">Executor（执行器）</h3>

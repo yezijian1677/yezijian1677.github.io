@@ -12,7 +12,8 @@
         <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
         
         <guid>https://www.augenye.cn/p/%E6%9C%8D%E5%8A%A1%E5%BD%92%E5%9B%A0ace/</guid>
-        <description>&lt;p&gt;参考天猫服务归因，此框架的大部分概念来自于下面的文章，自行实现框架的思路也与之一致。&lt;!-- raw HTML omitted --&gt;用下文的话来说，此框架主要是对以下内容的思考：&lt;!-- raw HTML omitted --&gt;对“属性-分类-执行”问题的产品化思考与实践上的实践。&lt;!-- raw HTML omitted --&gt;解决了属性分类的通用性问题，具有良好的扩展性和代码语义&lt;/p&gt;
+        <description>&lt;p&gt;参考天猫服务归因，此框架的大部分概念来自于下面的文章 &lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/article/777742&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;服务归因组件&lt;/a&gt;，自行实现框架的思路也与之一致。&lt;!-- raw HTML omitted --&gt;用下文的话来说，此框架主要是对以下内容的思考：&lt;!-- raw HTML omitted --&gt;对“属性-分类-执行”问题的产品化思考与实践上的实践。&lt;!-- raw HTML omitted --&gt;解决了属性分类的通用性问题，具有良好的扩展性和代码语义&lt;/p&gt;
 &lt;h2 id=&#34;组件&#34;&gt;组件&lt;/h2&gt;
 &lt;p&gt;使用ACE需要了解的组件，通过这些组件搭配使用，才能使用好这个框架，解决复杂业务逻辑问题。&lt;/p&gt;
 &lt;h3 id=&#34;executor执行器&#34;&gt;Executor（执行器）&lt;/h3&gt;
