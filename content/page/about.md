@@ -6,21 +6,22 @@ aliases:
   - about-us
   - contact
 license: CC BY-NC-ND
-lastmod: '2021-06-27 14:23:11'
+lastmod: '2022-10-05'
 menu:
     main: 
         weight: -90
         pre: home
 ---
 
-Hey，I'm augenye，目前就职于**京东零售-技术与数据中心**，一枚全栈（干）工程师，热爱生活，热爱代码～
+Hey，I'm augenye，目前就职于**微众银行**，从事后台开发相关的工作，一枚全栈（干）工程师，热爱生活，热爱代码～
+
+目前坐标: 深圳
 
 技能清单:
-* Java
-* Spring
-* Netty
-* Database
-* Vue/React/Mini-program
+* 语言: Java、Go、JS
+* 数据库: MySQL、TiDB、Redis，ES
+* 方向: 规则引擎、策略引擎
+* 其他: Vue/React/Mini-program
 * ...
 
 技能树:  
@@ -28,11 +29,13 @@ Hey，I'm augenye，目前就职于**京东零售-技术与数据中心**，一�
 
 个人经历:
 
-   | 时间        | 经历    |
-    | --------   | -----:   |
-    | 2016 - 2020        | 天津理工大学 本科学业      |
-    | 2020 - Now        | 京东零售-技术与数据中心      |
-    | ...        | future      |
+| 时间          | 经历          |
+|-------------|-------------|
+| 2016 - 2020 | 天津理工大学  |
+| 2020 - 2022 | 京东零售-技术与数据中心 |
+| 2022 - NOW  | WeBank      |
+| ...         | Future      |
+
     
 个人主页:
 

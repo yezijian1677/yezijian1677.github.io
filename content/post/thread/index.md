@@ -3,7 +3,7 @@ author = "augenye"
 title = "多线程基础知识"
 date = "2021-08-01"
 categories = [
-    "服务端"
+    "Servers"
 ]
 tags = [
     "Java","多线程"

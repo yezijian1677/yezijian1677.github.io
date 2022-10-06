@@ -3,7 +3,7 @@ author = "augenye"
 title = "DDD - Domain Primitive"
 date = "2021-08-01"
 categories = [
-    "服务端"
+    "Servers"
 ]
 tags = [
     "微服务","DDD"
